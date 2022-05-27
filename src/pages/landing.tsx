@@ -1,5 +1,6 @@
-import { Flex, Heading } from "@chakra-ui/react";
+import { Box, Flex, Heading } from "@chakra-ui/react";
 import IobLogo from "../components/atoms/iobLogo";
+import Timer from "../components/molecule/Timer";
 
 function Landing() {
   return (
@@ -14,6 +15,9 @@ function Landing() {
       <Heading color="#2c3e50" fontSize={{ base: "48px", md: "92px" }}>
         SPRING PARTY
       </Heading>
+      <Box>
+        <Timer />
+      </Box>
     </Flex>
   );
 }

@@ -1,4 +1,4 @@
-import { Box, Stack, Heading } from "@chakra-ui/react";
+import { Box, Grid, GridItem, Heading } from "@chakra-ui/react";
 import dayjs from "dayjs";
 import relativeTime from "dayjs/plugin/relativeTime";
 import Countdown, { CountdownRenderProps } from "react-countdown";
@@ -23,12 +23,24 @@ const Timer = () => {
       return <Heading>ITS THE DAY</Heading>;
     } else {
       return (
-        <Stack direction="row" spacing={4}>
-          <CalendarUnit timeUnit={days} />
-          <CalendarUnit timeUnit={hours} />
-          <CalendarUnit timeUnit={minutes} />
-          <CalendarUnit timeUnit={seconds} />
-        </Stack>
+        <Grid
+          templateRows={{ base: "1fr 1fr", md: "1fr" }}
+          templateColumns={{ base: "1fr 1fr", md: "1fr 1fr 1fr 1fr" }}
+          gridGap={3}
+        >
+          <GridItem>
+            <CalendarUnit time={days} unit="days" />
+          </GridItem>
+          <GridItem>
+            <CalendarUnit time={hours} unit="hours" />
+          </GridItem>
+          <GridItem>
+            <CalendarUnit time={minutes} unit="minutes" />
+          </GridItem>
+          <GridItem>
+            <CalendarUnit time={seconds} unit="seconds" />
+          </GridItem>
+        </Grid>
       );
     }
   };
