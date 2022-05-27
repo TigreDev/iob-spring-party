@@ -45,7 +45,7 @@ const Timer = () => {
     }
   };
   return (
-    <Box>
+    <Box mt={{ base: 4, md: 8 }}>
       <Countdown date={initialTime} renderer={renderer} />
     </Box>
   );
