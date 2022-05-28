@@ -26,7 +26,7 @@ const Timer = () => {
         <Grid
           templateRows={{ base: "1fr 1fr", md: "1fr" }}
           templateColumns={{ base: "1fr 1fr", md: "1fr 1fr 1fr 1fr" }}
-          gridGap={3}
+          gridGap={{ base: 4, md: 6 }}
         >
           <GridItem>
             <CalendarUnit time={days} unit="days" />

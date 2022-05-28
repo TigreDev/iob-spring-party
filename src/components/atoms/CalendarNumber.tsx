@@ -10,7 +10,7 @@ const CalendarNumber = ({ numberToDisplay }: CalendarNumberProps) => {
       <Flex
         w={20}
         h={28}
-        bg="linear-gradient(0deg, #383838 49%, white 49%, white 51%, #383838 51%)"
+        bg="linear-gradient(0deg, #383838 50%, white 50%, white 51%, #383838 51%)"
         justify="center"
         align="center"
         fontSize="7xl"
