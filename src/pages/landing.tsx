@@ -10,9 +10,9 @@ function Landing() {
         <IobLogo w={{ md: "25em" }} h="auto" mt={{ base: 10, md: 20 }} />
         <Heading
           color="#2c3e50"
-          fontSize={{ base: "48px", md: "92px" }}
-          fontStyle="italic"
-          fontWeight="light"
+          fontSize={{ base: "5rem", md: "10rem" }}
+          fontFamily="handWritted"
+          fontWeight="initial"
         >
           SPRING PARTY
         </Heading>

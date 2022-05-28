@@ -14,7 +14,7 @@ const CalendarNumber = ({ numberToDisplay }: CalendarNumberProps) => {
         justify="center"
         align="center"
         fontSize="7xl"
-        fontWeight="extrabold"
+        fontFamily="digital"
         color="yellow.100"
         borderRadius="2px"
         _after={{

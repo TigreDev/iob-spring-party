@@ -7,7 +7,7 @@ interface CalendarUnitProps {
 }
 
 const CalendarUnit = ({ time, unit }: CalendarUnitProps) => {
-  const timeGroup = `${time}`.length !== 2 ? [0, 0] : `${time}`.split("");
+  const timeGroup = `${time}`.length !== 2 ? [0, time] : `${time}`.split("");
   const leftUnit = timeGroup[0];
   const rightUnit = timeGroup[1];
 

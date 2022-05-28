@@ -6,6 +6,8 @@ import reportWebVitals from "./reportWebVitals";
 import * as serviceWorker from "./serviceWorker";
 import { ChakraProvider } from "@chakra-ui/react";
 import theme from "./theme";
+import "@fontsource/just-another-hand";
+import "@fontsource/dseg7";
 
 const container = document.getElementById("root");
 if (!container) throw new Error("Failed to find the root element");
