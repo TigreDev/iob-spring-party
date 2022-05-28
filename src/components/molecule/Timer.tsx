@@ -8,9 +8,8 @@ dayjs.extend(relativeTime);
 const Timer = () => {
   const targetDate = dayjs("06/17/2022");
   const today = dayjs();
-  const timeLeft = today.to(targetDate, true);
-  const msLeft = Number(timeLeft.split(" ")[0]) * 24 * 60 * 60 * 1000;
-  const initialTime = Date.now() + msLeft;
+  const timeLeft = Number(targetDate.diff(today).toString());
+  const initialTime = Date.now() + timeLeft;
 
   const renderer = ({
     days,
