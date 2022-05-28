@@ -8,23 +8,28 @@ function Landing() {
     <Center minH="100vh" bgColor="#e1e9ec" w="full">
       <Flex align="center" direction="column" alignSelf="start" zIndex="10">
         <IobLogo w={{ md: "25em" }} h="auto" mt={{ base: 10, md: 20 }} />
-        <Heading color="#2c3e50" fontSize={{ base: "48px", md: "92px" }}>
+        <Heading
+          color="#2c3e50"
+          fontSize={{ base: "48px", md: "92px" }}
+          fontStyle="italic"
+          fontWeight="light"
+        >
           SPRING PARTY
         </Heading>
         <Box>
           <Timer />
         </Box>
+        <Drink
+          breverage="orange"
+          containerStyle={{
+            w: { base: 80, md: "35rem" },
+            position: { base: "relative", md: "absolute" },
+            bottom: "0%",
+            left: { md: "0%" },
+            zIndex: "1",
+          }}
+        />
       </Flex>
-      <Drink
-        breverage="orange"
-        containerStyle={{
-          w: { base: 80, md: "35rem" },
-          position: "absolute",
-          bottom: "0%",
-          left: { md: "0%" },
-          zIndex: "1",
-        }}
-      />
     </Center>
   );
 }
