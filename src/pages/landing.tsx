@@ -1,4 +1,4 @@
-import { Box, Center, Flex, Heading } from "@chakra-ui/react";
+import { Box, Center, Flex, Heading, Text } from "@chakra-ui/react";
 import Drink from "../components/atoms/Drink/Drink";
 import IobLogo from "../components/atoms/iobLogo";
 import Timer from "../components/molecule/Timer";
@@ -22,13 +22,24 @@ function Landing() {
         <Drink
           breverage="orange"
           containerStyle={{
-            w: { base: 80, md: "35rem" },
+            w: { base: 80, md: "30rem" },
             position: { base: "relative", md: "absolute" },
-            bottom: "0%",
+            bottom: { md: "0%" },
             left: { md: "0%" },
             zIndex: "1",
           }}
         />
+        <Text
+          fontWeight="thin"
+          color="black"
+          fontSize="xs"
+          position={{ base: "relative", md: "absolute" }}
+          bottom={{ md: 0 }}
+          mt={{ base: 8, md: 0 }}
+        >
+          © 2022. All Rights reserved. ioB Party Timer made with 💖 by Ruben
+          Tigre
+        </Text>
       </Flex>
     </Center>
   );
