@@ -51,7 +51,7 @@ function Landing() {
         bottom={{ md: 0 }}
         mt={{ base: 8, md: 0 }}
       >
-        © 2022. All Rights reserved. ioB Party Timer made with 💖 by Ruben Tigre
+        © 2022. All Rights reserved. ioB Party Timer made with 💖 by Ruben Tigre and Irene Chinchilla
       </Text>
     </Flex>
   );
