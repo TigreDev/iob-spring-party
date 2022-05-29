@@ -81,6 +81,7 @@ const ClickMe = (props: BoxProps) => {
       <Box
         as="span"
         bg="#2c3e50"
+        color="white"
         px={3}
         py={2}
         borderRadius="2xl"

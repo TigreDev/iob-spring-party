@@ -3,9 +3,10 @@ import dayjs from "dayjs";
 import Countdown, { CountdownRenderProps } from "react-countdown";
 import CalendarUnit from "../atoms/CalendarUnit";
 import partyConfig from "../../partyConfig";
+import TimeOut from "./TimeOut";
 
 const Timer = () => {
-  const targetDate = dayjs(partyConfig.partyDate);
+  const targetDate = dayjs();
   const today = dayjs();
   const timeLeft = Number(targetDate.diff(today).toString());
   const initialTime = Date.now() + timeLeft;
@@ -18,7 +19,7 @@ const Timer = () => {
     completed,
   }: CountdownRenderProps) => {
     if (completed) {
-      return <Heading>ITS THE DAY</Heading>;
+      return <TimeOut />;
     } else {
       return (
         <Grid

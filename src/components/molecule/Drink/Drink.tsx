@@ -1,12 +1,12 @@
 import { useState } from "react";
 import { Box, BoxProps, Flex } from "@chakra-ui/react";
 import Lottie from "lottie-react";
-import lemonade from "./drink.json";
-import orange from "./orangeDrink.json";
-import champagne from "./champagne.json";
-import pomerade from "./pomerade.json";
-import coke from "./coke.json";
-import ClickMe from "../ClickMe";
+import lemonade from "./animations/drink.json";
+import orange from "./animations/orangeDrink.json";
+import champagne from "./animations/champagne.json";
+import pomerade from "./animations/pomerade.json";
+import coke from "./animations/coke.json";
+import ClickMe from "../../atoms/ClickMe";
 
 type breverageType = "lemonade" | "orange" | "champagne" | "pomerade" | "coke";
 

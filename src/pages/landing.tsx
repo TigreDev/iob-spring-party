@@ -1,5 +1,5 @@
 import { Box, Flex, Heading, Text } from "@chakra-ui/react";
-import Drink from "../components/atoms/Drink/Drink";
+import Drink from "../components/molecule/Drink/Drink";
 import IobLogo from "../components/atoms/iobLogo";
 import Timer from "../components/molecule/Timer";
 import partyConfig from "../partyConfig";
