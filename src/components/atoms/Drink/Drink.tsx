@@ -1,11 +1,12 @@
 import { useState } from "react";
-import { Box, BoxProps } from "@chakra-ui/react";
+import { Box, BoxProps, Flex } from "@chakra-ui/react";
 import Lottie from "lottie-react";
 import lemonade from "./drink.json";
 import orange from "./orangeDrink.json";
 import champagne from "./champagne.json";
 import pomerade from "./pomerade.json";
 import coke from "./coke.json";
+import ClickMe from "../ClickMe";
 
 type breverageType = "lemonade" | "orange" | "champagne" | "pomerade" | "coke";
 
@@ -55,11 +56,14 @@ const Drink = ({ containerStyle, breverage }: DrinkProps) => {
 
   return (
     <Box {...containerStyle}>
-      <Lottie
-        animationData={drinks[currentDrink]}
-        loop={false}
-        onClick={() => nextDrink()}
-      />
+      <Flex direction="column" alignItems={"center"} cursor="pointer">
+        <Lottie
+          animationData={drinks[currentDrink]}
+          loop={false}
+          onClick={() => nextDrink()}
+        />
+        <ClickMe />
+      </Flex>
     </Box>
   );
 };

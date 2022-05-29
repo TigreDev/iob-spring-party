@@ -1,4 +1,4 @@
-import { Box, Flex, Heading, Text, useBreakpointValue } from "@chakra-ui/react";
+import { Box, Flex, Heading, Text } from "@chakra-ui/react";
 import Drink from "../components/atoms/Drink/Drink";
 import IobLogo from "../components/atoms/iobLogo";
 import Timer from "../components/molecule/Timer";
@@ -20,16 +20,6 @@ function Landing() {
         <Box>
           <Timer />
         </Box>
-        <Text
-          color="#2c3e50"
-          fontSize="xl"
-          fontWeight="bold"
-          textAlign="center"
-          mt={{ base: 4, md: 8 }}
-        >
-          {useBreakpointValue({ base: "👇🏻", md: "👈🏻" })} While waiting you can
-          serve you another drink!
-        </Text>
       </Flex>
       <Flex justify="center">
         <Drink
