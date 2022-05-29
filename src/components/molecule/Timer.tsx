@@ -1,12 +1,11 @@
 import { Box, Grid, GridItem, Heading } from "@chakra-ui/react";
 import dayjs from "dayjs";
-import relativeTime from "dayjs/plugin/relativeTime";
 import Countdown, { CountdownRenderProps } from "react-countdown";
 import CalendarUnit from "../atoms/CalendarUnit";
-dayjs.extend(relativeTime);
+import partyConfig from "../../partyConfig";
 
 const Timer = () => {
-  const targetDate = dayjs("06/17/2022");
+  const targetDate = dayjs(partyConfig.partyDate);
   const today = dayjs();
   const timeLeft = Number(targetDate.diff(today).toString());
   const initialTime = Date.now() + timeLeft;
