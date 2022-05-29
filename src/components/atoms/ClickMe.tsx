@@ -1,7 +1,7 @@
-import { Box } from "@chakra-ui/react";
+import { Box, BoxProps } from "@chakra-ui/react";
 import { keyframes } from "@emotion/react";
 
-const ClickMe = () => {
+const ClickMe = (props: BoxProps) => {
   const spin = keyframes`
   0% {
     -webkit-transform: rotate(-3deg);
@@ -76,6 +76,7 @@ const ClickMe = () => {
       position="relative"
       bottom="10"
       animation={spinAnimation}
+      {...props}
     >
       <Box
         as="span"

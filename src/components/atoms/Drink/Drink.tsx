@@ -62,7 +62,7 @@ const Drink = ({ containerStyle, breverage }: DrinkProps) => {
           loop={false}
           onClick={() => nextDrink()}
         />
-        <ClickMe />
+        <ClickMe onClick={() => nextDrink()} />
       </Flex>
     </Box>
   );
