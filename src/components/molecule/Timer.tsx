@@ -3,7 +3,7 @@ import dayjs from "dayjs";
 import Countdown, { CountdownRenderProps } from "react-countdown";
 import CalendarUnit from "../atoms/CalendarUnit";
 import partyConfig from "../../partyConfig";
-import TimeOut from "./TimeOut";
+import TimeOut from "./TimeOut/TimeOut";
 
 const Timer = () => {
   const targetDate = dayjs(partyConfig.partyDate);
