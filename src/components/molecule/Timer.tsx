@@ -1,4 +1,4 @@
-import { Box, Grid, GridItem, Heading } from "@chakra-ui/react";
+import { Box, Grid, GridItem } from "@chakra-ui/react";
 import dayjs from "dayjs";
 import Countdown, { CountdownRenderProps } from "react-countdown";
 import CalendarUnit from "../atoms/CalendarUnit";
@@ -6,7 +6,7 @@ import partyConfig from "../../partyConfig";
 import TimeOut from "./TimeOut";
 
 const Timer = () => {
-  const targetDate = dayjs();
+  const targetDate = dayjs(partyConfig.partyDate);
   const today = dayjs();
   const timeLeft = Number(targetDate.diff(today).toString());
   const initialTime = Date.now() + timeLeft;
