@@ -3,12 +3,11 @@ import { Box, BoxProps, Flex } from "@chakra-ui/react";
 import Lottie from "lottie-react";
 import lemonade from "./animations/drink.json";
 import orange from "./animations/orangeDrink.json";
-import champagne from "./animations/champagne.json";
 import pomerade from "./animations/pomerade.json";
 import coke from "./animations/coke.json";
 import ClickMe from "../../atoms/ClickMe";
 
-type breverageType = "lemonade" | "orange" | "champagne" | "pomerade" | "coke";
+type breverageType = "lemonade" | "orange" | "pomerade" | "coke";
 
 interface DrinkProps {
   containerStyle: BoxProps;
@@ -19,7 +18,6 @@ const Drink = ({ containerStyle, breverage }: DrinkProps) => {
   const drinks = {
     lemonade,
     orange,
-    champagne,
     pomerade,
     coke,
   };
