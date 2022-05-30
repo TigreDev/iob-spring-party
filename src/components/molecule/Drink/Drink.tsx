@@ -54,13 +54,18 @@ const Drink = ({ containerStyle, breverage }: DrinkProps) => {
 
   return (
     <Box {...containerStyle}>
-      <Flex direction="column" alignItems={"center"} cursor="pointer">
+      <Flex
+        direction="column"
+        alignItems={"center"}
+        cursor="pointer"
+        position="relative"
+      >
+        <ClickMe onClick={() => nextDrink()} />
         <Lottie
           animationData={drinks[currentDrink]}
           loop={false}
           onClick={() => nextDrink()}
         />
-        <ClickMe onClick={() => nextDrink()} />
       </Flex>
     </Box>
   );

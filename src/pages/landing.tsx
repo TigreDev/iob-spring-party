@@ -15,7 +15,7 @@ function Landing() {
             fontSize={{ base: "5rem", md: "10rem" }}
             fontFamily="handWritted"
             textTransform="uppercase"
-            mt={{ base: 2, md: 7 }}
+            mt={{ base: 2, md: 4 }}
           >
             {partyConfig.partyName}
           </Heading>
@@ -27,6 +27,7 @@ function Landing() {
             containerStyle={{
               w: { base: 80, md: "35rem" },
               mb: { base: 8, md: 10 },
+              mt: 4,
             }}
           />
         </Flex>
