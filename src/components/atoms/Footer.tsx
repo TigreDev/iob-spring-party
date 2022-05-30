@@ -3,6 +3,7 @@ import { Text } from "@chakra-ui/react";
 const Footer = () => {
   return (
     <Text
+      w="full"
       fontWeight="thin"
       color="black"
       fontSize="xs"
