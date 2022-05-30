@@ -6,7 +6,7 @@ const Footer = () => {
       fontWeight="thin"
       color="black"
       fontSize="xs"
-      position={{md: "relative", base: "absolute"}}
+      position={{base: "relative", md: "absolute"}}
       textAlign="center"
       w="full"
       bottom={{ md: 0 }}
