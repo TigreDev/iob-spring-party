@@ -25,7 +25,7 @@ function Landing() {
           <Drink
             breverage="pomerade"
             containerStyle={{
-              w: { base: 80, md: "80%" },
+              w: { base: 80, md: "35rem" },
               mb: { base: 8, md: 10 },
             }}
           />
