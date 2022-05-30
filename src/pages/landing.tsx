@@ -25,7 +25,8 @@ function Landing() {
           breverage="pomerade"
           containerStyle={{
             w: { base: 80, md: "30rem" },
-            alignSelf: {md: "flex-start"}
+            alignSelf: {md: "flex-start"},
+            mb: { base: 10, md: 0}
           }}
         />
         <Footer />
