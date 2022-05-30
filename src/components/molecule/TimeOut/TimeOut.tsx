@@ -80,7 +80,6 @@ const TimeOut = () => {
         position="absolute"
         zIndex={11}
         display={display}
-        bottom={{ md: 0 }}
       >
         <Lottie
           animationData={fireworks}
