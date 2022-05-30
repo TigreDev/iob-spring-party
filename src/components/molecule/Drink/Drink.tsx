@@ -35,7 +35,7 @@ const Drink = ({ containerStyle, breverage }: DrinkProps) => {
     let newLeftDrinks;
 
     if (lengthOfDrinks === 1) {
-      randomDrink = Math.floor(Math.random() * 5);
+      randomDrink = Math.floor(Math.random() * drinkArray.length);
       nextDrink = drinkArray[randomDrink];
       newLeftDrinks = drinkArray.filter((drink) => drink !== nextDrink);
     } else {
