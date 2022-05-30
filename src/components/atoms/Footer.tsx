@@ -6,11 +6,11 @@ const Footer = () => {
       fontWeight="thin"
       color="black"
       fontSize="xs"
-      position={{ base: "relative", md: "absolute" }}
+      position="relative"
       textAlign="center"
       w="full"
       bottom={{ md: 0 }}
-      mt={{ base: 8, md: 0 }}
+      pt={{ base: 8, md: 4 }}
     >
       © 2022. All Rights reserved. ioB Party Timer made with 💖 by Ruben Tigre
       and Irene Chinchilla
