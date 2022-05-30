@@ -10,7 +10,7 @@ const Footer = () => {
       position={{ base: "relative", md: "absolute" }}
       w="full"
       bottom={{ md: 0 }}
-      pt={{ base: 8, md: 4 }}
+      py={{ base: 8, md: 4 }}
     >
       © 2022. All Rights reserved. ioB Party Timer made with 💖 by Ruben Tigre
       and Irene Chinchilla
