@@ -27,7 +27,7 @@ function Landing() {
             containerStyle={{
               w: { base: 80, md: "35rem" },
               mb: { base: 8, md: 10 },
-              mt: 4,
+              mt: 8,
             }}
           />
         </Flex>
