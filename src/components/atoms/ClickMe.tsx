@@ -71,13 +71,7 @@ const ClickMe = (props: BoxProps) => {
   const spinAnimation = `${spin} infinite 2s linear`;
 
   return (
-    <Box
-      w="fit-content"
-      position="absolute"
-      top={{ base: "2", md: "4" }}
-      animation={spinAnimation}
-      {...props}
-    >
+    <Box w="fit-content" animation={spinAnimation} {...props}>
       <Box
         as="span"
         bg="#2c3e50"
