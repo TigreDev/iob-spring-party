@@ -1,4 +1,4 @@
-import { Box, Grid, GridItem } from "@chakra-ui/react";
+import { Grid, GridItem } from "@chakra-ui/react";
 import dayjs from "dayjs";
 import Countdown, { CountdownRenderProps } from "react-countdown";
 import CalendarUnit from "../atoms/CalendarUnit";

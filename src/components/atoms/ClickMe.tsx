@@ -74,7 +74,7 @@ const ClickMe = (props: BoxProps) => {
     <Box
       w="fit-content"
       position="absolute"
-      top={{ base: "2", md: "8" }}
+      top={{ base: "2", md: "4" }}
       animation={spinAnimation}
       {...props}
     >
