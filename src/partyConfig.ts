@@ -5,7 +5,7 @@ interface PartyConfig {
 
 const partyConfig: PartyConfig = {
   partyName: "Spring Party",
-  partyDate: "12/19/2022",
+  partyDate: "11/19/2022",
 };
 
 export default partyConfig;
